@@ -1,4 +1,4 @@
-<h3>Contato</h3>
+<h3>Fornecedores</h3>
 <ul>
     <li>
         <a href="{{ route('site.index') }}">Principal</a>
