@@ -1,5 +1,5 @@
 <h3>Fornecedores</h3>
-<ul>
+{{-- <ul>
     <li>
         <a href="{{ route('site.index') }}">Principal</a>
     </li>
@@ -21,4 +21,12 @@
     <li>
         <a href="{{ route('app.produtos') }}">Produtos</a>
     </li>
-</ul>
+</ul> --}}
+
+@if(count($fornecedores) > 0 && count($fornecedores) < 10 )
+    <h3>Existem alguns fornecedores cadastrados</h3>
+@elseif(count($fornecedores) > 10)
+    <h3>Existem vários fornecedores cadastrados</h3>
+@else
+    <h3> Ainda não existem fornecedores cadastrados </h3>
+@endif
